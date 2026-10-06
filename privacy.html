@@ -8,25 +8,59 @@
 <body>
 <main>
 <h1>PM Desk privacy policy</h1>
-<p>Last updated: October 2026</p>
+<p>Last updated: October 6, 2026</p>
 
-<h2>What PM Desk does</h2>
-<p>PM Desk is a private assistant that reads email sent to one project Gmail account, drafts replies for the account owner to review, and sends approved replies from that account.</p>
+<h2>1. Who we are</h2>
+<p>PM Desk is a private, single-owner assistant run by its owner, brokenmelody25@gmail.com. It is not a public service and is not offered to other people. The app manages email sent to one project Gmail account for a property project.</p>
 
-<h2>Google user data</h2>
-<p>PM Desk uses Gmail API access with two permissions: read-only access to the project mailbox, and permission to send email from it. PM Desk uses this data only to provide the drafting and sending features described above.</p>
-<p>PM Desk does not sell Google user data, does not use it for advertising, does not use it to train AI models, and does not transfer it to anyone except as needed to provide these features. PM Desk's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+<h2>2. Google user data we access</h2>
+<p>PM Desk connects to one Gmail account, the project mailbox, using two Google permissions:</p>
+<ul>
+<li><strong>Read-only access</strong> (gmail.readonly): reads incoming messages in the project mailbox, including sender, recipients, subject, date, message body, and attachments.</li>
+<li><strong>Send access</strong> (gmail.send): sends email from the project mailbox, only after the owner approves a specific draft.</li>
+</ul>
+<p>PM Desk does not access any other Gmail account, Google Drive, contacts, or calendar data.</p>
 
-<h2>Where data goes</h2>
-<p>Email text may be sent to an AI model provider to draft replies. Drafts are shown to the account owner in a private Telegram chat before anything is sent. Nothing is sent to a vendor without the owner's approval.</p>
+<h2>3. How the data is used</h2>
+<ul>
+<li><strong>Triage:</strong> incoming messages are read to decide what needs a reply and what is urgent.</li>
+<li><strong>Drafting:</strong> an AI language model writes a draft reply. The model receives the message text and the app's working instructions. The model's output is stored as a draft.</li>
+<li><strong>Owner approval:</strong> the owner receives each draft, and any notices, in a private Telegram chat with a bot. Nothing is sent to a recipient until the owner approves it in that chat.</li>
+<li><strong>Sending:</strong> approved drafts are sent from the project mailbox. A copy of each sent message is delivered to the owner's own address.</li>
+<li><strong>Attachments:</strong> PDF attachments may have their text extracted, so the model can read them. Extraction runs in a restricted sandbox.</li>
+</ul>
+<p>PM Desk does not sell Google user data, does not use it for advertising, does not use it to build profiles, and does not use it to train AI models. Its use and transfer of information received from Google APIs follows the Google API Services User Data Policy, including the Limited Use requirements.</p>
 
-<h2>Storage</h2>
-<p>Mail content and drafts are stored on the owner's own computer and server. Access tokens are stored with restricted permissions and are used only by the services that need them.</p>
+<h2>4. Where the data goes</h2>
+<ul>
+<li><strong>Google:</strong> Gmail is the mail service that sends and receives the messages.</li>
+<li><strong>AI model provider:</strong> message text and drafting instructions are sent to the model that writes drafts. This is either a commercial AI API, under that provider's terms, or a language model running on hardware the owner controls. Only the content needed to draft a reply is sent.</li>
+<li><strong>Telegram:</strong> drafts, notices, and the owner's approval commands pass through Telegram's bot service.</li>
+</ul>
+<p>No other third party receives the data.</p>
 
-<h2>Deleting data</h2>
-<p>You can revoke PM Desk's access at any time in your Google Account under Security, Third-party access. To request deletion of data PM Desk holds, contact the address below.</p>
+<h2>5. Where the data is stored</h2>
+<p>Mail content, drafts, and logs are stored on a virtual machine on the owner's own computer, in restricted folders that only the app's services can read. Access tokens are stored with restricted file permissions. Encrypted backups may be kept in remote storage, and when they are, they are encrypted before they leave the owner's computer.</p>
 
-<h2>Contact</h2>
+<h2>6. How long data is kept</h2>
+<p>[RETENTION PERIOD, for example: messages and drafts are kept for N days, then deleted. Logs are kept for N days.]</p>
+
+<h2>7. Who can access the data</h2>
+<p>Only the owner has access to the app and its data. No one else has an account on the system.</p>
+
+<h2>8. Your choices</h2>
+<ul>
+<li>You can revoke PM Desk's access at any time in your Google Account under <strong>Security → Third-party access</strong>.</li>
+<li>You can ask for deletion of data PM Desk holds about you by writing to the contact address below.</li>
+</ul>
+
+<h2>9. Children</h2>
+<p>PM Desk is not directed at children under 13 and does not knowingly collect information from them.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted here with a new "Last updated" date.</p>
+
+<h2>11. Contact</h2>
 <p><a href="mailto:brokenmelody25@gmail.com">brokenmelody25@gmail.com</a></p>
 </main>
 </body>
